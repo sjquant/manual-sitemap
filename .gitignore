@@ -1,0 +1,13 @@
+# virtualenv
+.venv
+
+# vscode settings
+.vscode
+
+# Python cache file
+__pycache__
+
+# build files
+build
+dist
+*.egg-info
