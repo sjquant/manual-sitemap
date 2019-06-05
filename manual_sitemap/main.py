@@ -41,7 +41,7 @@ def create_sitemap(config, output):
 
     domain = configs['DOMAIN']
     routes = configs['ROUTES']
-    queries = configs['QUERIES']
+    queries = configs.get('QUERIES', {})
 
     with open(output, mode='w') as f:
         f.write(XML_HEADER)
