@@ -1,7 +1,9 @@
+import io
+
 from setuptools import setup
 from manual_sitemap.__version__ import version
 
-with open("README.rst") as rm:
+with io.open("README.rst", mode='r', encoding='utf-8') as rm:
     long_description = rm.read()
 
 setup(
@@ -15,7 +17,7 @@ setup(
     ),
     url='https://github.com/sjquant/manual-sitemap',
     long_description=long_description,
-    packages=['manual-sitemap'],
+    packages=['manual_sitemap'],
     keywords=['sitemap', 'xml'],
     entry_points={
         "console_scripts": [
